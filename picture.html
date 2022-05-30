@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pictures</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="picture.css">
+<style>
+body {
+  background-color: lightblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="picture" class="active"><strong>Pictures</strong></a>
+  <div id="myLinks">
+    <a href="index">Home</a>
+    <hr>
+    <a href="download">Downloads</a>
+    <hr>
+    <a href="instruction">Instructions</a>
+    <hr>
+    <a href="chat">Chat Section</a>
+    <hr>
+    <a href="social">Social Medias</a>
+    <hr>
+    <a href="preview">Previews</a>
+    <hr>
+    <a href="picture">Pictures</a>
+    <hr>
+    <a href="game">Game Room</a>
+    <hr>
+    <a href="tools">Tools</a>
+    <hr>
+    <a href="https://jomvlmrs.github.io/BlockieSMP/">BlockieSMP's Webpage</a>
+    </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<center>
+<h3>Avatars</h3>
+</center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <center>
+  <div class="numbertext">1/9</div>
+  <img src="Ellie.png" style="width:55%">
+  <div class="text">Ellie</div>
+  </center>
+</div>
+
+<div class="mySlides fade">
+  <center>
+  <div class="numbertext">2/9</div>
+  <img src="Sally.png" style="width:55%">
+  <div class="text">Sally</div>
+  </center>
+</div>
+
+<div class="mySlides fade">
+  <center>
+  <div class="numbertext">3/9</div>
+  <img src="Sandy.png" style="width:55%">
+  <div class="text">Sandy</div>
+  </center>
+</div>
+
+<div class="mySlides fade">
+  <center>
+  <div class="numbertext">4/9</div>
+  <img src="Sophie.png" style="width:55%">
+  <div class="text">Sophie</div>
+  </center>
+</div>
+
+<div class="mySlides fade">
+  <center>
+  <div class="numbertext">5/9</div>
+  <video width="250" height="250" autoplay muted loop>
+  <source src="Tea.mp4" type="video/mp4">
+  </video>
+  <div class="text">Tea</div>
+  </center>
+</div>
+
+<div class="mySlides fade">
+  <center>
+  <div class="numbertext">6/9</div>
+  <img src="Anna.png" style="width:55%">
+  <div class="text">Anna</div>
+  </center>
+</div>
+
+<div class="mySlides fade">
+  <center>
+  <div class="numbertext">7/9</div>
+  <img src="Luke.png" style="width:55%">
+  <div class="text">Luke</div>
+  </center>
+</div>
+
+<div class="mySlides fade">
+  <center>
+  <div class="numbertext">8/9</div>
+  <img src="Jom.png" style="width:55%">
+  <div class="text">Jom</div>
+  </center>
+</div>
+
+<div class="mySlides fade">
+  <center>
+  <div class="numbertext">9/9</div>
+  <img src="Lizie.jpg" style="width:55%">
+  <div class="text">Lizie</div>
+  </center>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<p><font color="Green">Note</font>: I made this avatars from PitzMaker (Android App) if you want use this avatar please email me for permission to use my avatars</p>
+<hr>
+</body>
+</html>
